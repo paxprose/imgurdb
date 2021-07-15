@@ -17,7 +17,7 @@ cd imgurdb
 go mod tidy
 ```
 
-from here you can build an executabled (make sure you're in the same folder as the `main.go` file)
+from here you can build an executable (make sure you're in the same folder as the `main.go` file)
 
 ```bash
 go build main.go

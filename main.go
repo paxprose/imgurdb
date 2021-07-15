@@ -26,7 +26,7 @@ func main() {
 }
 
 func generateImage(dir string) {
-	f, err := os.ReadFile(dir + "/main.go")
+	f, err := os.ReadFile(dir + "/imgs/main.go")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -53,7 +53,7 @@ func generateImage(dir string) {
 	if hexbuf.Len() > 0 {
 		setColor(hexbuf.String(), x, y, img)
 	}
-	file, _ := os.Create("./main.png")
+	file, _ := os.Create("./imgs/main.png")
 	png.Encode(file, img)
 }
 
